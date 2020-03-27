@@ -16,7 +16,7 @@ export function createDemo(divId) {
     const W=96, H=96;
     let demo;
     const modelDir = 'webgl_models8';
-    let target = '🦎';
+    let target = 'planarian';
     let experiment = 'ex3';
     let paused = false;
 
@@ -44,7 +44,7 @@ export function createDemo(divId) {
 
     function initUI() {
       let spriteX = 0;
-      for (let c of '🦎😀💥👁🐠🦋🐞🕸🥨🎄') {
+      for (let c of '🦎😀💥👁🐠🦋🐞🕸🥨🎄🌍😷🦠🍎') {
         const div = document.createElement('div')
         div.id = c;
         div.style.backgroundPositionX = spriteX + 'px';
@@ -143,7 +143,7 @@ export function createDemo(divId) {
         requestAnimationFrame(render);
       } else {
         demo.setWeights(model);
-        demo.reset();
+        //demo.reset();
       }
       updateUI();
     }

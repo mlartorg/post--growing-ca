@@ -1,6 +1,8 @@
 <script src="twgl.min.js"></script>
 
+<script src="record-canvas-to-video.js"></script>
 
+<video id="video" controls loop></video><br>
 
 <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path><path d="M0 0h24v24H0z" fill="none"></path></symbol>
@@ -308,15 +310,6 @@ input[type="radio"] {
 
             </span>
         </div>
-
-    <video id="recorded" playsinline loop></video>
-
-    <div>
-        <button id="record">Start Recording</button>
-        <button id="play" disabled>Play</button>
-        <button id="download" disabled>Download</button>
-    </div>
-
         <div id="colab-hero-div">
           <a href="https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb" class="colab-root" id="colab-hero">Try in a <span class="colab-span">Notebook</span></a>
         </div>
@@ -326,13 +319,5 @@ input[type="radio"] {
     import { createDemo } from './demo.js'
     createDemo('demo');
 </script>
-
-<script>
-	console.log('hi')
-</script>
-
-
-<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-<script src="main.js" defer></script>
 
 
